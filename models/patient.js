@@ -10,7 +10,7 @@
    },
    lastName:{
      type: String
-   },
+   }
  });
 
  const Patient = mongoose.model('patient', PatientSchema);
