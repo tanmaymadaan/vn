@@ -12,3 +12,6 @@
      type: String
    },
  });
+
+ const Patient = mongoose.model('patient', PatientSchema);
+ module.exports = Patient;
