@@ -3,6 +3,9 @@
 
 
  const PatientSchema = new Schema({
+   pId:{
+     type: Number
+   },
    firstName:{
      type: String
    },
