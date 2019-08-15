@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-const autoIncrement = require('mongoose-auto-increment');
 const app = express();
 
 mongoose.connect('mongodb://localhost/vn', { useNewUrlParser: true});
