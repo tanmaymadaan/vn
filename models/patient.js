@@ -1,9 +1,10 @@
  const mongoose = require('mongoose');
  const Schema = mongoose.Schema;
 
+
  const PatientSchema = new Schema({
    firstName:{
-     type: String,
+     type: String
    },
    lastName:{
      type: String
