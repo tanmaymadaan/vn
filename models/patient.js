@@ -3,10 +3,12 @@
 
  const PatientSchema = new Schema({
    mrdNo:{
-     type: String
+     type: String,
+     required: true
    },
    firstName:{
-     type: String
+     type: String,
+     default: 'hello'
    },
    lastName:{
      type: String
