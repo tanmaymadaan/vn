@@ -7,7 +7,7 @@ const Counter = require('../models/counter');
 router.post('/add-patient', function(req, res, next){
 
     Patient.create(req.body).then(function(patient){
-      Counter.findByIdAndUpdate({_id: '5d5516f6a99a93a312d8a59b'}, {$inc: {counter: 1}}, function(err, Counter){
+      Counter.findOneAndUpdate({val: 'counterId'}, {$inc: {counter: 1}}, function(err, Counter){
           if(err)
             return next(err);
           console.log('counter updated');
